@@ -1,0 +1,38 @@
+t how to set up. This is a test page hosted locally on docker
+
+you need docker installed
+we are creating our own container and image
+these are initiated in the dockerfile
+so far no docker compose.. yet?
+
+
+
+SIMPLIFIED ie to start just run the python file "STARTUP.py"
+then http://localhost:8000/
+
+
+do:
+docker build -t practicesite . (image name is practicesite but this step is naming it, . is in this directory)
+
+docker images (check which images you have)
+
+now lauch docker, check in docker desktop and remember to end it after. (container named here, image name as before)
+docker run -d -p 8000:8000 --name practicesite practicesite
+
+
+host page:
+http://localhost:8000
+
+to update page after editing
+docker cp index.html practicesite:/htmlproject/index.html
+
+and refresh browser
+
+
+to stop docker
+(use container name)
+docker stop practicesite
+
+dont remake it because it wont work anyways since it already exists
+docker restart practicesite
+

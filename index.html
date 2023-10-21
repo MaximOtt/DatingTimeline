@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title Page</title>
+
+</head>
+<body>
+    <h1>Dating Site</h1>
+    <p>This is a simple page to be updated soon</p>
+    <div></div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    // the function we wrote in Python to update the DataFrame content
+    function updateDataFrameContent() {
+        $("div").load("data_table.html");
+    }
+
+    // now call that function when the page loads
+    $(document).ready(function() {
+        updateDataFrameContent();
+    });
+</script>
+
+
+    <button onclick="updateDataFrameContent()">Update DataFrame</button>
+</body>
+</html>
+
+
