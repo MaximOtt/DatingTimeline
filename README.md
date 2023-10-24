@@ -16,7 +16,7 @@ https://drive.google.com/file/d/1JpMR26TbvhJKcuiOTQdmKGGgCb9ia5Qq/view?usp=shari
 
 Branch rules:
 
-puch to dev when section is completed.
+push to dev when section is completed.
 create a branch per backlog item
 
 
